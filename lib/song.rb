@@ -49,7 +49,7 @@ class Song
     song
   end
 
-  def create_from_filename
+  def create_from_filename(filename)
     split_filename = filename.chop.chop.chop.chop.split (" - ")
     song = Song.new
     song.name = split_filename[1]
