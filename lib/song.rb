@@ -43,7 +43,7 @@ class Song
 
   def self.new_from_filename(name)
     song = song.new
-    split_filename = filename.chop.chop.chop.chop.split(" - ")
+    split_filename = name.chop.chop.chop.chop.split(" - ")
     song
   end
 end
