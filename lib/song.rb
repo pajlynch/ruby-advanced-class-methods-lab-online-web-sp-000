@@ -31,6 +31,5 @@ class Song
 
   def self.find_by_name(name)
     @@all.detect{ |song| song.new == name }
-
   end
 end
